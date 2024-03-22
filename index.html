@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Datos</title>
+<link rel="stylesheet" href="CSS/estilo.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+        <h1>Formulario de Datos</h1>
+        <img src="../PW/IMG/ganido.png" alt="Logo" class="logo">
+    </div>
+    
+    <div class="wrapper">
+        <div class="ad-left">
+            <img src="../PW/IMG/publi.jpeg" alt="Publicidad" class="ad">
+        </div>
+
+<form action="guardar_datos.php" method="post">
+  <label for="nombre">Nombre y Apellidos:</label><br>
+  <input type="text" id="nombre" name="nombre" required><br>
+  <label>Sexo:</label><br>
+  <input type="radio" id="masculino" name="sexo" value="Masculino" required>
+  <label for="masculino">Masculino</label><br>
+  <input type="radio" id="femenino" name="sexo" value="Femenino">
+  <label for="femenino">Femenino</label><br>
+  <input type="radio" id="otro" name="sexo" value="Otro">
+  <label for="otro">Otro</label><br>
+  <label for="domicilio">Domicilio:</label><br>
+  <input type="text" id="domicilio" name="domicilio" required><br>
+  <label for="clave_lector">Clave de Lector:</label><br>
+  <input type="text" id="clave_lector" name="clave_lector" required><br>
+  <label for="curp">CURP:</label><br>
+  <input type="text" id="curp" name="curp" pattern="[A-Z]{4}[0-9]{6}[HM]{1}[A-Z]{5}[A-Z0-9]{2}" 
+      title="Ingrese un CURP válido" required><br>
+  <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br>
+  <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br><br>
+  <label for="telefono">Teléfono:</label><br>
+  <input type="tel" id="telefono" name="telefono" required><br>
+  <label for="ocupacion">Ocupación:</label><br>
+  <input type="text" id="ocupacion" name="ocupacion" required><br>
+  <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br>
+  <label>¿Cómo considera su estado de salud?</label><br>
+  <input type="radio" id="salud_bueno" name="estado_salud" value="Bueno" required>
+  <label for="salud_bueno">Bueno</label><br>
+  <input type="radio" id="salud_regular" name="estado_salud" value="Regular">
+  <label for="salud_regular">Regular</label><br>
+  <input type="radio" id="salud_malo" name="estado_salud" value="Malo">
+  <label for="salud_malo">Malo</label><br><br>
+  <input type="submit" value="Guardar Datos">
+</form>
+
+<div class="info-box">
+  <p class="info-text">PAGINAS QUE QUISAS TE INTERESEN</p>
+  <p class="info-text">Pagina de dinosaurios <a href="https://www.nationalgeographic.com.es/temas/dinosaurios">National Geographic</a></p>
+  <p class="info-text">Pagina de Pokemon <a href="https://www.pokemon.com/el">Pokémon</a></p>
+  <p class="info-text">Juegos Gratis de cel <a href="https://poki.com/es/celular">Poki</a></p>
+  <p class="info-text">Informacion sobre patos <a href="https://es.wikipedia.org/wiki/Pato">Wikipedia</a></p>
+</div>
+</div>
+</div>
+
+</body>
+</html>
